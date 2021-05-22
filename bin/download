@@ -59,6 +59,7 @@ download_zip() {
 	local download_url=""
 
 	download_url=$(get_download_url "${download_version}")
+	echo "downloading ${download_url}..."
 
 	cd "${download_path}"
 	curl -sL -o "$download_as" "$download_url" || exit 1
