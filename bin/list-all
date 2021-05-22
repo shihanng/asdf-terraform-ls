@@ -21,4 +21,4 @@ list_versions() {
 	eval "${cmd}" | grep -oE 'tag_name": *"v[0-9].*",' | grep -vE "(v3\.[3-9]|v[4-9]).*" | sed 's/tag_name\": *\"v//;s/\",//'
 }
 
-list_versions | sort_versions | tr '\n' ' ' | sed 's/ *$/\n/g'
+list_versions | sort_versions | tr '\n' ' ' | sed 's/ *$//g'
