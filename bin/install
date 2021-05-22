@@ -3,4 +3,6 @@
 set -eu
 set -o pipefail
 
-cp "${ASDF_DOWNLOAD_PATH}/terraform-ls" "${ASDF_INSTALL_PATH}/terraform-ls"
+mkdir -p "${ASDF_INSTALL_PATH}/bin"
+
+cp "${ASDF_DOWNLOAD_PATH}/terraform-ls" "${ASDF_INSTALL_PATH}/bin/terraform-ls"
