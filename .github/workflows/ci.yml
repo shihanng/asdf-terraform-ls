@@ -36,5 +36,5 @@ jobs:
 
     steps:
       - uses: actions/setup-go@v2
-      - run: GO111MODULE=on go get mvdan.cc/sh/v3/cmd/shfmt
+      - run: GO111MODULE=on go install mvdan.cc/sh/v3/cmd/shfmt@v3.3.0
       - run: shfmt -ci -s -bn bin/*
