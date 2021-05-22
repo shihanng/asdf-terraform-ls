@@ -62,7 +62,7 @@ download_zip() {
 
 	cd "${download_path}"
 	curl -sL -o "$download_as" "$download_url" || exit 1
-	unzip "${download_as}" && rm "${download_as}"
+	unzip -qq "${download_as}" && rm "${download_as}" || exit 1
 	exit 0
 }
 
