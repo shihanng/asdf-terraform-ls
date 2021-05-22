@@ -30,3 +30,10 @@ jobs:
           command: terraform-ls --version
         env:
           GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run the sh-checker
+        uses: luizm/action-sh-checker@v0.2.2
