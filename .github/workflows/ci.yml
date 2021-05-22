@@ -36,4 +36,4 @@ jobs:
 
     steps:
       - run: sudo snap install shfmt
-      - run: shfmt -ci -s -bn bin/*
+      - run: shfmt -ci -s -bn -d bin/download bin/install bin/list-all
