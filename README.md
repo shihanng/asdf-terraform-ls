@@ -1,6 +1,5 @@
 # asdf-terraform-ls
 [![Main CI workflow](https://github.com/shihanng/asdf-terraform-ls/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/shihanng/asdf-terraform-ls/actions/workflows/ci.yml)
-:wq
 
 [terraform-ls](https://github.com/hashicorp/terraform-ls) plugin fpr [asdf version manager](https://asdf-vm.com/#/).
 
