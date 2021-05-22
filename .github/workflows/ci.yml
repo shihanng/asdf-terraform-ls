@@ -35,5 +35,5 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: snap install shfmt
+      - run: sudo snap install shfmt
       - run: shfmt -ci -s -bn bin/*
