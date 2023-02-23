@@ -49,7 +49,7 @@ get_download_url() {
 	platform=$(get_platform)
 	arch=$(get_arch)
 
-	echo -n "https://github.com/hashicorp/terraform-ls/releases/download/v${version}/terraform-ls_${version}_${platform}_${arch}.zip"
+	echo -n "https://releases.hashicorp.com/terraform-ls/${version}/terraform-ls_${version}_${platform}_${arch}.zip"
 }
 
 download_zip() {
